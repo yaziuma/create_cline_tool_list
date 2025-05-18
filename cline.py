@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Set
 # GITHUB_REPO_OWNER = "cline" # No longer needed directly for zip URL
 # GITHUB_REPO_NAME = "cline" # No longer needed directly for zip URL
 # GITHUB_BRANCH_OR_TAG = "main" # Part of the zip URL
-FILE_PATH_IN_REPO = "src/core/Cline.ts" # Path within the zip structure (after the root folder)
+FILE_PATH_IN_REPO = "src/core/task/index.ts" # Path within the zip structure (after the root folder)
 # ZIP_ROOT_DIR_PATTERN = r"cline-main/" # Pattern to identify the root directory in the zip. Will be determined dynamically.
 
 # URL for the zip file
@@ -20,7 +20,7 @@ TEMP_EXTRACT_DIR = "temp_cline_repo_extract" # Directory to extract files
 DOWNLOADED_ZIP_NAME = "downloaded_repo.zip"
 
 # 出力ファイル名
-OUTPUT_JSON_FILE = "available_tools.json"
+OUTPUT_JSON_FILE = "cline_available_tools.json"
 
 def fetch_source_code_from_zip(zip_url: str, target_path_in_zip: str) -> str | None:
     """
