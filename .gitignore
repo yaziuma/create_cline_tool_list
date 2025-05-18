@@ -11,3 +11,4 @@ wheels/
 /temp_cline_repo_extract/*
 /cline_available_tools.json
 /roo_available_tools.json
+/uv.lock

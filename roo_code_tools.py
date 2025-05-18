@@ -65,7 +65,7 @@ def extract_tool_names_from_typescript_roo(source_code: str) -> List[str]:
     print(f"[{SCRIPT_NAME}] Extracted tool names: {sorted_tool_names}")
     return sorted_tool_names
 
-if __name__ == "__main__":
+def main():
     process_tools(
         script_name=SCRIPT_NAME,
         github_zip_url=GITHUB_ZIP_URL,
@@ -74,3 +74,6 @@ if __name__ == "__main__":
         output_json_file=OUTPUT_JSON_FILE,
         extract_tool_names_func=extract_tool_names_from_typescript_roo
     )
+
+if __name__ == "__main__":
+    main()

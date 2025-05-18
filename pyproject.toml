@@ -7,3 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "requests>=2.32.3",
 ]
+
+[project.scripts]
+update_cline_tools = "cline:main"
+update_roo_tools = "roo_code_tools:main"
