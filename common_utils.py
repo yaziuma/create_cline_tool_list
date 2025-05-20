@@ -12,8 +12,7 @@ def fetch_source_code_from_zip(zip_url: str, target_path_in_zip: str, downloaded
     """
     指定されたURLからZIPファイルをダウンロードし、一時ディレクトリに解凍して特定のファイルのソースコードを取得します。
     """
-    # スクリプトごとに一時ディレクトリを分ける
-    extract_to_path = os.path.join(os.getcwd(), f"{TEMP_EXTRACT_DIR_BASE}_{script_name}")
+    extract_to_path = os.path.join(os.getcwd(), f"{TEMP_EXTRACT_DIR_BASE}")
     downloaded_zip_path = os.path.join(extract_to_path, downloaded_zip_name)
 
     try:
